@@ -6,9 +6,9 @@ root.title("Unit Calculator")
 root.geometry("1000x500")
 
 # Text area
-entry = tk.Entry()
-entry.grid(column=1, row=0, sticky='N')
-entry.insert(END, 'Choose values:')
+label = tk.Label(text='Choose values:')
+label.grid(column=1, row=0, sticky='N')
+
 
 #Listbox
 
