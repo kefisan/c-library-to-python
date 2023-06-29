@@ -1,5 +1,8 @@
 import ctypes
+import os
+from os.path import dirname, abspath
 
-lib = ctypes.CDLL("/Users/illiriabalog/CLionProjects/library_check/cmake-build-debug/liblibrary_check.dylib")
+path = str(dirname(abspath(__file__)) + "/liblibrary_check.dylib")
 
+lib = ctypes.CDLL(path)
 lib.convert_SI.restype = ctypes.c_double

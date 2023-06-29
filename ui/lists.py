@@ -9,13 +9,15 @@ unit_out_label.grid(column=2, row=1)
 
 def listbox_1_used(event):
     global unit_in
-    unit_in = ctypes.c_char_p(listbox_1.get(listbox_1.curselection()).encode())
-    unit_in_label["text"] = f"Unit in: {listbox_1.get(listbox_1.curselection())}"
+    if listbox_1.curselection():
+        unit_in = ctypes.c_char_p(listbox_1.get(listbox_1.curselection()).encode())
+        unit_in_label["text"] = f"Unit in: {listbox_1.get(listbox_1.curselection())}"
 
 def listbox_2_used(event):
     global unit_out
-    unit_out = ctypes.c_char_p(listbox_2.get(listbox_2.curselection()).encode())
-    unit_out_label["text"] = f"Unit out: {listbox_2.get(listbox_2.curselection())}"
+    if listbox_2.curselection():
+        unit_out = ctypes.c_char_p(listbox_2.get(listbox_2.curselection()).encode())
+        unit_out_label["text"] = f"Unit out: {listbox_2.get(listbox_2.curselection())}"
 
 listbox_1 = tk.Listbox(height=8)
 options = ["mm", "cm", "m", "km", "mile", "yard", "foot", "inch"]
