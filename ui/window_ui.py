@@ -2,8 +2,9 @@ import tkinter as tk
 from tkinter import END
 
 root = tk.Tk()
+root.option_add("*Font", "TkDefaultFont 24")
 root.title("Unit Calculator")
-root.geometry("1000x500")
+root.geometry("910x350")
 
 # Text area
 label = tk.Label(text='Choose values:')
