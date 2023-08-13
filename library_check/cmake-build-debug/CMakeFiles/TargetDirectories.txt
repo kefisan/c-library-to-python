@@ -1,0 +1,3 @@
+/Users/illiriabalog/CLionProjects/library_check/cmake-build-debug/CMakeFiles/library_check.dir
+/Users/illiriabalog/CLionProjects/library_check/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/illiriabalog/CLionProjects/library_check/cmake-build-debug/CMakeFiles/rebuild_cache.dir
